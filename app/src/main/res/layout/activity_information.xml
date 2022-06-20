@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".activity.InfoActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/alur"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:src="@drawable/alur_bansos"
+            android:layout_margin="20dp"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg"
+            android:padding="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp">
+           <RelativeLayout
+               android:id="@+id/box1"
+               android:layout_width="350dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               app:layout_constraintLeft_toLeftOf="parent"
+               app:layout_constraintRight_toLeftOf="@+id/imgkriteria"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintTop_toTopOf="parent">
+               <TextView
+                   android:id="@+id/kriteria"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginBottom="10dp"
+                   android:textSize="16sp"
+                   android:textStyle="bold"
+                   android:text="Kriteria Penerima Bantuan Sosial"/>
+               <TextView
+                   android:id="@+id/k1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginBottom="10dp"
+                   android:layout_below="@+id/kriteria"
+                   android:text="1. Diutamakan kepala keluarga"/>
+               <TextView
+                   android:id="@+id/k3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginBottom="10dp"
+                   android:layout_below="@+id/k1"
+                   android:text="3. Berdomisili di wilayah Kota Balikpapan"/>
+               <TextView
+                   android:id="@+id/k4"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginBottom="10dp"
+                   android:layout_below="@+id/k3"
+                   android:text="4. Data lengkap sesuai dengan database capil"/>
+               <TextView
+                   android:id="@+id/k5"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginBottom="10dp"
+                   android:layout_below="@+id/k4"
+                   android:text="5. Hanya 1 orang yang bisa mendaftar setiap keluarga"/>
+           </RelativeLayout>
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/imgkriteria"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_weight="1"
+                android:src="@drawable/scan"
+                app:layout_constraintLeft_toRightOf="@+id/box1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp">
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/imgproblem"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_weight="1"
+                android:src="@drawable/prob"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/box2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+            <RelativeLayout
+                android:id="@+id/box2"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/imgproblem"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <TextView
+                    android:id="@+id/problem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="Problematika Data Bansos di Kota Balikpapan"/>
+                <TextView
+                    android:id="@+id/p1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_below="@+id/problem"
+                    android:text="1. Data penerima bantuan sosial tidak akurat."/>
+                <TextView
+                    android:id="@+id/p3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_below="@+id/p1"
+                    android:text="3. Penyaluran bansos berpotensi terjadinya korupsi."/>
+                <TextView
+                    android:id="@+id/p4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_below="@+id/p3"
+                    android:text="4. Pengawasan dalam penyaluran bansos kurang"/>
+                <TextView
+                    android:id="@+id/p5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_below="@+id/p4"
+                    android:text="5. Hanya 1 orang yang bisa mendaftar setiap keluarga"/>
+            </RelativeLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</ScrollView>

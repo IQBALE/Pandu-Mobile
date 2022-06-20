@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">pandu</string>
+    <string name="list_kriteria">
+        <li>Diutamakan kepala keluarga</li>
+        <li>Prioritas awal bagi masyarakat berjenis kelamin laki - laki (tidak menutup kemungkinan untuk perempuan)</li>
+        <li>Berdomisili di wilayah Kota Balikpapan</li>
+        <li>Memiliki kelengkapan data yang sesuai dengan database capil</li>
+        <li>Hanya 1 orang yang bisa mendaftar setiap keluarga"</li>
+    </string>
+</resources>
